@@ -1,0 +1,17 @@
+#Python3
+import math
+
+if __name__ == '__main__':
+    n = int(input())
+
+
+k = 0  
+i = 0
+j = n
+
+while (j > 0):
+    k += j*10**i
+    i += 1 + int(math.log(j,10))
+    j -= 1
+    
+print(k)
